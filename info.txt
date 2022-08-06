@@ -1,0 +1,37 @@
+// Running cypress testcase 
+
+1) Test runner  2) Command Line
+// npx cypress open 
+// npx cypress run
+
+// Default config can be overwrite in cypress.json file 
+
+
+         // local      staging     cananry   production 
+
+change        baseurl      baseurl     baseurl      baseurl
+change        un pwd       un pwd      un pwd       un pwd
+chnage        db pwd       db pwd      db pwd       db pwd
+
+maintain     cypress.json cypress.json cypress.json cypress.json
+
+read from command line 
+
+local -----> https://google.com
+staging ----> https:youtube.com
+canary ----> https://yahoo.com 
+production ----> https://www.facebook.com
+
+
+/*Changing the baseurl via commandLine*/
+
+npx cypress run --config baseUrl="https://www.staging-website.com/" // headless
+npx cypress run --headed --config baseUrl="https://www.staging-website.com/" // browser - electron
+npx cypress run --headed  --browser chrome --config baseUrl="https://google.com"
+npx cypress run --headed  --browser chrome --config baseUrl="https://youtube.com"
+npx cypress run --headed  --browser chrome --config baseUrl="https://yahoo.com"
+npx cypress run --headed  --browser chrome --config baseUrl="https://www.facebook.com"
+
+
+npx cypress run --headed --config-file staging-config.json
+npx cypress run  --headed --env ENV="production"

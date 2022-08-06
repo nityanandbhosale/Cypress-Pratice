@@ -1,0 +1,7 @@
+{
+    "extends": "./cypress.json",
+    "baseUrl":"https://webdriveruniversity.com/"
+  }
+
+
+  

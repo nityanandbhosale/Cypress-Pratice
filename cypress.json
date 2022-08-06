@@ -1,0 +1,5 @@
+{
+    "requestTimeout":100000,
+    "baseUrl":"https://www.google.com",
+    "chromeWebSecurity": false   
+}
