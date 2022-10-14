@@ -22,7 +22,7 @@ describe('verify the message functionality',()=>{
     })
 
     // visit to test cases
-    it.only('verify the test cases',()=>{
+    it('verify the test cases',()=>{
         cy.visit('http://automationexercise.com')
         cy.get('ul li a[href="/"]').should('be.visible')
         cy.get('li a[href="/test_cases"]').click({ multiple: true })
