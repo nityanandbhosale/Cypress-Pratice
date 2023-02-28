@@ -14,6 +14,7 @@ describe('verify the login functionality by import the fixture file',()=>{
             cy.visit('http://practice.automationtesting.in/my-account/')
             cy.get('#username').type(data.username)
             cy.get('#password').type(data.password)
+            
             cy.get('#rememberme').click()
             cy.get('input[value="Login"]').click()
             cy.contains('Dashboard').should('be.visible')

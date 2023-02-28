@@ -69,12 +69,12 @@ describe('Tranverse method in cypress',function(){
 
     })
 
-    // /*.prevUnti()*/
-    // it('To get all of the next sibling DOM elements within elements until another element, use the .nextUntil() command.',function(){
-    //     cy.visit('http://www.webdriveruniversity.com/Data-Table/index.html')
-    //     cy.get('#fruits').nextUntil('#veggie').should('have.length',5)
+    /*.prevUnti()*/
+    it('To get all of the next sibling DOM elements within elements until another element, use the .nextUntil() command.',function(){
+        cy.visit('http://www.webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#fruits').nextUntil('#veggie').should('have.length',5)
 
-    // })
+    })
 
     // it.only('To get descendant DOM elements of the selector, use the .find() command.',function(){
     //     cy.visit('http://www.webdriveruniversity.com/Data-Table/index.html')
@@ -99,10 +99,16 @@ describe('Tranverse method in cypress',function(){
        
     // })
     // // parents()
-    // it.only('To get parents DOM element of elements, use the .parents() command.',function(){
-    //     cy.visit('http://www.webdriveruniversity.com/Data-Table/index.html')
-    //     cy.get('#veggie').parents().filter('.container').should('have.length',1)
+    it.only('To get parents DOM element of elements, use the .parents() command.',function(){
+        cy.visit('http://www.webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#veggie').parents().filter('.container').should('have.length',1)
        
-    // })
+    })
+
+    it.only('To get parents DOM element of elements, use the .parents() command.',function(){
+        cy.visit('http://www.webdriveruniversity.com/Data-Table/index.html')
+        cy.get('.container').find('.col-sm-12 text-center')
+       
+    })
 
 })

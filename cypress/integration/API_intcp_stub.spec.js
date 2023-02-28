@@ -64,7 +64,7 @@ describe('Tubbing the Api responce',()=>{
     it.only('verify',function(){
         cy.intercept({
             method:"GET",
-            url:"https://jsonplaceholder.typicode.com/posts"
+            url:"https://api.demoblaze.com/bycat"
         },{
             name:"nityanand"
         }).as('users')

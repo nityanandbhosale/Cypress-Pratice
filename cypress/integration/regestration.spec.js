@@ -48,10 +48,6 @@ describe('verify the register login functionality',function(){
         cy.get('button[data-qa="create-account"]').click()
         cy.get('section div.row p').first().then(function(el){
             expect(el.text()).to.eqls('Congratulations! Your new account has been successfully created!')
-        })
-        
-        
-
-        
+        })   
     })
 })

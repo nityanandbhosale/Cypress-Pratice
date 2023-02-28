@@ -1,5 +1,12 @@
 {
     "requestTimeout":100000,
     "baseUrl":"https://www.google.com",
-    "chromeWebSecurity": false   
+    "chromeWebSecurity": false,
+    "failOnStatusCode": false,
+
+    "env":{
+        "QA":"www.facebook.in",
+        "pre-prod":"https://www.staging-website.com",
+        "production":"https://www.production-website.com"
+    }
 }

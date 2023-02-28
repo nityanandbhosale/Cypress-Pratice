@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "production": "npx cypress run --headed  --browser chrome --config baseUrl=\"https://www.facebook.com\"",
-    "staging": "npx cypress run --headed  --browser chrome --config baseUrl=\"https://www.google.com\"",
+    "production": "npx cypress run --headed  --browser edge --config baseUrl=\"https://www.facebook.com\"",
+    "staging": "npx cypress run --headed  --browser edge --config baseUrl=\"https://www.google.com\"",
     "local": "npx cypress run --headed  --browser chrome --config baseUrl=\"https://www.yahoo.com\"",
     "canary": "npx cypress run --headed  --browser chrome --config baseUrl=\"https://www.youtube.com\"",
     "configS": "npx cypress run --headed --config-file staging-config.json",
@@ -25,4 +25,9 @@
     "cypress-xpath": "^2.0.1",
     "node-xlsx": "^0.21.0"
   }
+
+
+
+
+  
 }
